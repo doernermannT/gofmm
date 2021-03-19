@@ -7,7 +7,7 @@ from sklearn.datasets import make_spd_matrix
 # Include all files in the python folder in the search path for import
 import sys
 sys.path.insert(1, '../python')
-from generate_SPD_from_KDE import generateSPD_fromKDE
+from .generate_SPD_from_KDE import generateSPD_fromKDE
 
 
 class rse_calculator():
