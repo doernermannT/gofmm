@@ -7,7 +7,7 @@ from sklearn.datasets import make_spd_matrix
 # Include all files in the python folder in the search path for import
 import sys
 sys.path.insert(1, '../python')
-from .generate_SPD_from_KDE import generateSPD_fromKDE
+from .generate_SPD_from_KDE import generateSPD_fromKDE  # . relative import
 
 
 class rse_calculator():
@@ -237,7 +237,7 @@ def main():
     kerneltype = "gaussian"
 
     # Vary rank and user tolerance
-    # Update the 2nd line of the setup file
+    # Update the 4th line of the setup file
     rank_idx = 4
     rank = [8, 32, 128, 256, 512, 1024][:3]
     # rank = [8, 32]
